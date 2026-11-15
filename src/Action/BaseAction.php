@@ -39,7 +39,7 @@ abstract class BaseAction
     {
         $claims = $request->getAttribute(JwksAuthMiddleware::ATTR_CLAIMS);
         if (!is_array($claims)) {
-            throw new \LogicException('JWT claims missing — check that this action is behind JwksAuthMiddleware');
+            throw new \LogicException('JWT claims missing, check that this action is behind JwksAuthMiddleware');
         }
 
         if ((bool) ($claims['admin'] ?? false) === true) {
@@ -56,7 +56,7 @@ abstract class BaseAction
 
         $active = ActiveCompany::resolve($claims, ActiveCompany::headerOf($request));
         if ($active === null) {
-            throw new \LogicException('JWT claims carry no company — check that this action is behind JwksAuthMiddleware');
+            throw new \LogicException('JWT claims carry no company, check that this action is behind JwksAuthMiddleware');
         }
         return $active;
     }

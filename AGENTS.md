@@ -28,6 +28,7 @@ composer migrate        # phinx, local env
 - A required env var gets a line in `.env.example` in the same change.
 - Document storage stays outside the webroot. Stripe calls stay in `PayAction` / `WebhookAction`.
 - `NOW()` columns and UTC columns are never compared in one condition.
+- Follows the TDS quality standard (`../tds-ops/standards/quality.md`): no AI slop, clean code.
 
 ## Topic files
 

@@ -20,7 +20,7 @@ final class DocumentSigner
     {
         if ($this->secret === '') {
             throw new \InvalidArgumentException(
-                'DOCUMENT_SIGN_SECRET is empty — set a strong random string',
+                'DOCUMENT_SIGN_SECRET is empty, set a strong random string',
             );
         }
     }
