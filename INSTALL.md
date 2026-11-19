@@ -23,7 +23,7 @@
 ## 1. Clone + install
 
 ```bash
-git clone https://github.com/Tracht-Digital-Solutions/tds-customer-api.git
+git clone https://github.com/Tracht-Digital-Labs/tds-customer-api.git
 cd tds-customer-api
 composer install
 ```
@@ -225,10 +225,10 @@ In production:
 
 ## Related repos
 
-- [tds-shared-pkg](https://github.com/Tracht-Digital-Solutions/tds-shared-pkg) — types for `Project`, `Invoice`, `Document`, `Message`, etc.
-- [tds-auth-api](https://github.com/Tracht-Digital-Solutions/tds-auth-api) — JWKS source; `POST /admin/customer-credentials` is called from here during onboarding
-- [tds-customer-legacy-frontend](https://github.com/Tracht-Digital-Solutions/tds-customer-legacy-frontend) — customer portal frontend; consumes every customer-scoped endpoint
-- [tds-admin](https://github.com/Tracht-Digital-Solutions/tds-admin) — `/time` page consumes `/admin/time-entries/*` + `/admin/projects`
+- [tds-shared-pkg](https://github.com/Tracht-Digital-Labs/tds-shared-pkg) — types for `Project`, `Invoice`, `Document`, `Message`, etc.
+- [tds-auth-api](https://github.com/Tracht-Digital-Labs/tds-auth-api) — JWKS source; `POST /admin/customer-credentials` is called from here during onboarding
+- [tds-customer-legacy-frontend](https://github.com/Tracht-Digital-Labs/tds-customer-legacy-frontend) — customer portal frontend; consumes every customer-scoped endpoint
+- [tds-admin](https://github.com/Tracht-Digital-Labs/tds-admin) — `/time` page consumes `/admin/time-entries/*` + `/admin/projects`
 
 ## Troubleshooting
 
